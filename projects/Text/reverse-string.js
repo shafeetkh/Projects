@@ -1,11 +1,9 @@
 // reverse a string by word
 
-function wordSplit() {
-	let str = prompt("Enter a string: ");
-	let strSplit = str.split(" ");
-	let result = strSplit.reverse().join(" ");
+const item = prompt("Enter something");
 
-	console.log(result);
-}
+const reverse = (str) => {
+	console.log(str.split("").reverse().join(""));
+};
 
-wordSplit();
+reverse(item);
