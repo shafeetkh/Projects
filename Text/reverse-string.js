@@ -1,9 +1,18 @@
 // reverse a string by word
 
-const item = prompt("Enter something");
+// FIRST WAY WITH .REVERSE()
+// const item = prompt("Enter something");
 
-const reverse = (str) => {
-	console.log(str.split("").reverse().join(""));
+// const reverse = (str) => {
+// 	console.log(str.split("").reverse().join(""));
+// };
+
+// reverse(item);
+
+// SECOND WAY WITH REDUCE()
+
+const reverseString = (str) => {
+	return str.split("").reduce((acc, val) => val + acc);
 };
 
-reverse(item);
+console.log(reverseString("mother"));
